@@ -88,7 +88,7 @@ by Prelude.")
 (setq gc-cons-threshold 50000000)
 
 ;; warn when opening files bigger than 100MB
-(setq large-file-warning-threshold 100000000)
+(setq large-file-warning-threshold 50000000)
 
 ;; preload the personal settings from `prelude-personal-preload-dir'
 (when (file-exists-p prelude-personal-preload-dir)
