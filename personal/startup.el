@@ -1,14 +1,6 @@
 ;;; startup.el --- Start things
 ;;; Code:
 
-;; Additional packages to install automatically
-(prelude-require-packages
- '(ample-theme
-   color-theme-sanityinc-tomorrow
-   nyan-mode
-   )
- )
-
 ; Graphical tweaks
 ;; Start fullscreen
 ;; Disable scrollbar
@@ -32,7 +24,7 @@
   (load "server")
   (unless (server-running-p) (server-start)))
 
-;; Enable the fancy nyan mode (\o/)
-(nyan-mode t)
+;; Disable IDO crappy shit
+(setq ido-use-filename-at-point nil)
 
 ;;; startup.el ends here

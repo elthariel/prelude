@@ -23,7 +23,12 @@
 (global-set-key (kbd "C-x ;") 'toggle-comment)
 
 
-;; Random shortcuts
+; Random shortcuts
+;; Quick access to query replace
 (global-set-key (kbd "<f2>") 'query-replace)
+;; My undo/redo
+(global-set-key (kbd "C--") 'undo-tree-undo)
+(global-set-key (kbd "M--") 'undo-tree-redo)
+
 
 ;;; code.el ends here

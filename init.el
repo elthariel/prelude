@@ -64,6 +64,8 @@ by Prelude.")
   "This folder stores all the automatically generated save/history-files.")
 (defvar prelude-modules-file (expand-file-name "prelude-modules.el" prelude-dir)
   "This files contains a list of modules that will be loaded by Prelude.")
+(defvar vendor-nopath-dir (expand-file-name "vendor_nopath" prelude-dir)
+  "Like 'prelude-vendor-dir', but not in the 'load-path'.")
 
 (unless (file-exists-p prelude-savefile-dir)
   (make-directory prelude-savefile-dir))
@@ -87,7 +89,7 @@ by Prelude.")
 ;; each 50MB of allocated data (the default is on every 0.76MB)
 (setq gc-cons-threshold 50000000)
 
-;; warn when opening files bigger than 100MB
+;; warn when opening files bigger than 50MB
 (setq large-file-warning-threshold 50000000)
 
 ;; preload the personal settings from `prelude-personal-preload-dir'
