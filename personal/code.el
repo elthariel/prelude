@@ -22,6 +22,8 @@
     (comment-or-uncomment-region start end)))
 (global-set-key (kbd "C-x ;") 'toggle-comment)
 
+;; Disable autosave
+(setq prelude-auto-save nil)
 
 ; Random shortcuts
 ;; Quick access to query replace
