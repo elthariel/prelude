@@ -6,7 +6,6 @@
 
 (defun c-mode-defaults ()
   (
-
   (setq c-default-style "bsd"
         c-basic-offset 2)
   (c-set-offset 'substatement-open 0))

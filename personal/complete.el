@@ -18,7 +18,7 @@
 (prelude-require-packages
  '(helm-gtags
    function-args
-   rtags
+   ;;   rtags
    company-c-headers)
  )
 
