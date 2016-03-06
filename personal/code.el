@@ -43,5 +43,4 @@
    ))
 (global-set-key [M-tab] 'clang-format-region)
 
-
 ;;; code.el ends here

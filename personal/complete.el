@@ -18,7 +18,7 @@
 (prelude-require-packages
  '(helm-gtags
    function-args
-;;   rtags
+   rtags
    company-c-headers)
  )
 
@@ -45,11 +45,16 @@
 (setq rtags-use-helm t)
 (setq rtags-tooltips-enabled t)
 (setq rtags-rdm-includes lta-include-path)
-;; (setq rtags-jump-to-first-match nil)
+(setq rtags-jump-to-first-match nil)
 
 ;; Bindings
 (rtags-enable-standard-keybindings c-mode-base-map "C-.")
 (define-key c-mode-base-map (kbd "<C-tab>") (function company-complete))
+
+
+;; Bindings
+(rtags-enable-standard-keybindings c-mode-base-map (kbd "C-."))
+;; (define-key c-mode-base-map (kbd "<C-tab>") (function company-complete))
 
 ;;--------------- Company -----------------
 
