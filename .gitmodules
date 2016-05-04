@@ -1,3 +1,6 @@
 [submodule "vendor/cedet"]
 	path = vendor_nopath/cedet
 	url = http://git.code.sf.net/p/cedet/git
+[submodule "vendor/rtags"]
+	path = vendor/rtags
+	url = git@github.com:elthariel/rtags.git

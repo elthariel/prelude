@@ -5,7 +5,7 @@
 
 
 (defun c-mode-defaults ()
-  (setq c-default-style "bsd"
+  (setq c-default-style "k&r"
         c-basic-offset 2)
   (c-set-offset 'substatement-open 0))
 

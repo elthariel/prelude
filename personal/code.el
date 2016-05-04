@@ -25,12 +25,23 @@
 ;; Disable autosave
 (setq prelude-auto-save nil)
 
+;; Default font size
+(set-face-attribute 'default nil :font
+                    "-*-Inconsolata-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1")
+(set-face-attribute 'default nil :height 150)
+
 ; Random shortcuts
 ;; Quick access to query replace
 (global-set-key (kbd "<f2>") 'query-replace)
 ;; My undo/redo
 (global-set-key (kbd "C--") 'undo-tree-undo)
 (global-set-key (kbd "M--") 'undo-tree-redo)
+
+;; Clang format
+(prelude-require-packages
+ '(clang-format
+   ))
+(global-set-key [M-tab] 'clang-format-region)
 
 
 ;;; code.el ends here
