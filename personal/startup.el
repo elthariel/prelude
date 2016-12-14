@@ -14,9 +14,9 @@
 ;; Start splitted
 (progn
   (split-window-right)
-;  (windmove-right)
-;  (split-window-below)
-;  (windmove-left)
+  (windmove-right)
+  (split-window-below)
+  (windmove-left)
   )
 
 ;; Let's start emacs server if we're the first instance
