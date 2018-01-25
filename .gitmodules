@@ -4,3 +4,6 @@
 [submodule "vendor/rtags"]
 	path = vendor/rtags
 	url = git@github.com:elthariel/rtags.git
+[submodule "vendor/crystal-mode"]
+	path = vendor/crystal-mode
+	url = https://github.com/dotmilk/emacs-crystal-mode.git

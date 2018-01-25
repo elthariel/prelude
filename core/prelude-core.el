@@ -139,7 +139,7 @@ PROMPT sets the `read-string prompt."
     (epl-upgrade)
     (message "Updating Prelude...")
     (cd prelude-dir)
-    (shell-command "git pull")
+    (shell-command "git fetch --all && git rebase upstream/master")
     (prelude-recompile-init)
     (message "Update finished. Restart Emacs to complete the process.")))
 

@@ -1,0 +1,3 @@
+;
+; Lta's ruby config
+;

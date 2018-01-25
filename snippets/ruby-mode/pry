@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Require and run pry here
+# key: pry
+# --
+# XXX: Remove pry call
+require 'pry'; binding.pry

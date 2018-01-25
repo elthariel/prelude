@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Add the frozen literal comment
+# key: fr
+# --
+# frozen_string_literal: true
