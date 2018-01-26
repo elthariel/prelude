@@ -43,4 +43,8 @@
    ))
 (global-set-key [M-tab] 'clang-format-region)
 
+;; Let's disable those FUCKING ANNOYING smartparens shortcuts
+(custom-set-variables
+ '(sp-override-key-bindings (quote (("C-<right>") ("C-<left>")))))
+
 ;;; code.el ends here
