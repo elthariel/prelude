@@ -7,3 +7,9 @@
 [submodule "vendor/crystal-mode"]
 	path = vendor/crystal-mode
 	url = https://github.com/dotmilk/emacs-crystal-mode.git
+[submodule "vendor/org-wiki"]
+	path = vendor/org-wiki
+	url = git@github.com:caiorss/org-wiki.git
+[submodule "vendor/reason-mode"]
+	path = vendor/reason-mode
+	url = git@github.com:reasonml-editor/reason-mode.git
